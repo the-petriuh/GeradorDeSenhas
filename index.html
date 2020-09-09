@@ -6,15 +6,33 @@
         <title>Document</title>
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="switch.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
     </head>
     <body>
         <div class="container">
             <div class="app-block">
                 <div class="wrapper">
-                    <label class="switch">
-                        <input type="checkbox">
-                        <span class="slider round"></span>
-                    </label>
+                    <div class="switch-wrapper">
+                        <label class="switch">
+                            <input id="checker" type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                    <div class="span-wrapper">
+                        <span>Include Symbols (!@#$...)</span>
+                    </div>
+                </div>
+                <div class="wrapper">
+                    <div class="ps-wrapper">
+                        <input type="number" id="length" max="32" min="8" value="8">
+                    </div>
+                    <div class="span-wrapper">
+                        <span>Password Lenght</span>
+                    </div>
+                </div>
+                <div class="password-box">
+                    <input id="gpassword" class="gpassword" type="text" placeholder="your password will be here" readonly>
+                    <input class="generate" type="button" value="generate" onclick="generate()">
                 </div>
             </div>
         </div>

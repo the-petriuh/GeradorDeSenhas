@@ -3,11 +3,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    border: none;
 }
 
 html, body
 {
     height: 100%;
+    font-family: 'Roboto Mono', monospace;
 }
 
 :root
@@ -32,6 +34,7 @@ body
     display: flex;
     align-items: center;
     justify-content: center;
+    color: var(--sec_white);
 }
 
 .app-block
@@ -43,3 +46,56 @@ body
     padding: 50px;
 }
 
+.wrapper
+{
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.ps-wrapper input
+{
+    height: 40px;
+    width: 60px;
+    font-size: 30px;
+    font-family: inherit;
+    border-radius: 5px;
+}
+
+.span-wrapper
+{
+    font-size: 30px;
+    margin-left: 20px;
+}
+
+.password-box
+{
+    display: flex;
+    height: 300px;
+    align-items: flex-end;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+.password-box input.gpassword
+{
+    width: 100%;
+    height: 45px;
+    background-color: var(--sec_white);
+    border-radius: 5px;
+    padding: 4px;
+    font-size: 30px;
+    font-family: inherit;
+    text-align: center;
+}
+
+.password-box input.generate
+{
+    margin: 20px auto;
+    width: 200px;
+    height: 45px;
+    background-color: var(--secondary-color);
+    font-size: 30px;
+    font-family: inherit;
+    border-radius: 5px;
+}

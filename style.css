@@ -77,15 +77,21 @@ body
     flex-flow: row wrap;
 }
 
+.password-box input.gpassword,
+.password-box input.generate
+{
+    height: 45px;
+    border-radius: 5px;
+    font-size: 30px;
+    font-family: inherit;
+
+}
+
 .password-box input.gpassword
 {
     width: 100%;
-    height: 45px;
     background-color: var(--sec_white);
-    border-radius: 5px;
     padding: 4px;
-    font-size: 30px;
-    font-family: inherit;
     text-align: center;
 }
 
@@ -93,9 +99,11 @@ body
 {
     margin: 20px auto;
     width: 200px;
-    height: 45px;
     background-color: var(--secondary-color);
-    font-size: 30px;
-    font-family: inherit;
-    border-radius: 5px;
+    outline: none;
+}
+
+.password-box input.generate:hover
+{
+    cursor: pointer;
 }

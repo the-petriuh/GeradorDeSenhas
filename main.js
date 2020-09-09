@@ -11,8 +11,7 @@ function generatePassword(passwordLenght, include_symbols)
 
     for (i = 0; i < passwordLenght; i++)
     {
-        const randomNumber = randomIntFromRange(0, range);
-        password += symbols[randomNumber];
+        password += symbols[randomIntFromRange(0, range)];
     }
     
     return password;
@@ -20,7 +19,7 @@ function generatePassword(passwordLenght, include_symbols)
 
 function generate()
 {
-    let passwordOutput = document.getElementById('gpassword');
+    let generatedPassword = document.getElementById('gpassword');
     let passwordLenght = parseInt(document.getElementById('length').value);
     
     if(passwordLenght > 32) passwordLenght = 32;
@@ -28,5 +27,6 @@ function generate()
     
     const newPassword = generatePassword(passwordLenght, 
         document.getElementById('checker').checked);
-    passwordOutput.value = newPassword;
+
+    generatedPassword.value = newPassword;
 }

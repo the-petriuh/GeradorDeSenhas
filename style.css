@@ -1,0 +1,45 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body
+{
+    height: 100%;
+}
+
+:root
+{
+    --main-bg-color: #3a0ca3;
+    --main-bg-lighter: #4b1abb;
+    --secondary-color: #21fa90;
+    --sec_white: #edf2f4;
+}
+
+body
+{
+    background-color: var(--main-bg-color);
+}
+
+.container
+{
+    max-width: 1120px;
+    height: 100%;
+    margin: 0 auto;
+    background-color: var(--main-bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.app-block
+{
+    width: 700px;
+    height: 600px;
+    background-color: var(--main-bg-lighter);
+    border-radius: 5px;
+    padding: 50px;
+}
+
